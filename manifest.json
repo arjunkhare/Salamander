@@ -1,0 +1,15 @@
+{
+"name":"Arjun's New Tab",
+"description":"Replaces default New Tab with my version.",
+"version":"1.0.0",
+"author":"kharecurry",
+"manifest_version":2,
+"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+"offline_enabled": true,
+"icons":{
+"128":"icon.png"
+},
+"chrome_url_overrides":{
+	"newtab":"index.html"
+}
+}
