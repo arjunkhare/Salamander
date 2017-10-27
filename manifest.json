@@ -2,11 +2,14 @@
 "name":"Salamander Productivity",
 "description":"An application that runs in the background and plays a random wav file every 5 mins in order to redirect a users attention.",
 "version":"1.0.0",
+"permissions": [
+    "activeTab"
+  ],
+"background": {
+    "scripts": ["main.js"]
+  },
 "author":"Tim Toombs, Arjun Khare, Anthony Hartmann",
 "manifest_version":2,
 "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-"offline_enabled": true,
-"chrome_url_overrides":{
-	"newtab":"index.html"
-}
+"offline_enabled": true
 }
